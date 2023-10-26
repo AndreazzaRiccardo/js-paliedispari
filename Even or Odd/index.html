@@ -8,7 +8,36 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>GIOCHIAMO A PARI O DISPARI</h1>
+        <form action="">
+            <h2>UTENTE</h2>
+            <div>
+
+                <label for="odd-even">Scegli pari o dispari</label>
+                <select name="" id="odd-even">
+                    <option value="">...</option>
+                    <option value="pari">Pari</option>
+                    <option value="dispari">Dispari</option>
+                </select>
+
+                <label for="user-number">Inserisci un numero da 1 a 5</label>
+                <input type="number" id="user-number">
+
+            </div>
+            <div>
+                <button id="play">PLAY</button>
+                <button id="clear">RIGIOCA</button>
+            </div>
+        </form>
+
+        <div class="cont-result hidden">
+            <h2>QUESTO E' IL MIO NUMERO:</h2>
+            <div id="bot-number"></div>
+            <div class="result"></div>
+        </div>
+
+    </div>
 
     <script src="./js/script.js"></script>
 </body>

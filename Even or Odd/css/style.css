@@ -3,3 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(197, 197, 215);
+}
+
+.container {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 2rem;
+}
+
+form {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+button {
+    padding: .5rem 1.5rem;
+    font-weight: bolder;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
+
+label {
+    margin: 1.5rem;
+}
+
+#bot-number {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.cont-result {
+    text-align: center;
+}
+
+.result {
+    color: darkred;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}

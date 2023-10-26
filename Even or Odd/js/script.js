@@ -11,6 +11,8 @@ playBtn.addEventListener("click", function(event){
     if(userNumber.value < 1 || userNumber.value > 5 || userChoise.value === "") {
         alert("Inserisci dei dati validi!!!");
         window.location.reload();
+    } else {
+        
     }
     
     let message = "";

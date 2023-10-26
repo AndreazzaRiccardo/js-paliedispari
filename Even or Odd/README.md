@@ -10,14 +10,14 @@ Dichiariamo chi ha vinto.**
 
 1. Creo la prima FUNZIONE per generare numeri randomici:
 
-        _Definisco_ la FUNZIONE con due valori (min e max) {
+        Definisco la FUNZIONE con due valori (min e max) {
             creo una COSTANTE in grado di generare un numero randomico compreso tra min e max;
             ritorno il valore della COSTANTE come risultato;
         }
 
 2. Creo la seconda FUNZIONE che determinerà se la somma di due numeri è pari o dispari:
 
-        _Definisco_ la FUNZIONE con due valori (numberOne, numberTwo) {
+        Definisco la FUNZIONE con due valori (numberOne, numberTwo) {
             creo una COSTANTE "result" che sia la somma tra numberOne e numberTwo;
             creo una condizione per cui:
                 SE result diviso due da resto zero {

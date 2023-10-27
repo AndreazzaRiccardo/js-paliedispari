@@ -1,30 +1,32 @@
-const userChoise = document.getElementById("odd-even");
+
 const playBtn    = document.getElementById("play");
-const userNumber = document.getElementById("user-number");
-const botNumber  = generateRandomNumber(1, 5);
-const soom       = itsEvenOrOdd(userNumber.value, botNumber);
 const clear      = document.getElementById("clear");
+const userChoise = document.getElementById("odd-even");
+const userNumberInput = document.getElementById("user-number");
 
 playBtn.addEventListener("click", function(event){
     event.preventDefault();
-
-    if(userNumber.value < 1 || userNumber.value > 5 || userChoise.value === "") {
+    
+    const userNumber = parseInt(userNumberInput.value);
+    const botNumber  = generateRandomNumber(1, 5);
+    const soom       = itsEvenOrOdd(userNumber, botNumber);
+    
+    if(userNumber < 1 || userNumber > 5 || userChoise.value === "") {
         alert("Inserisci dei dati validi!!!");
         window.location.reload();
-    } else {
-        
-    }
-    
+    } 
+
     let message = "";
     if (userChoise.value === soom){
         message = "HAI VINTO !"
     } else {
         message = "HAI PERSO"
     }
-    
+        
+    document.querySelector(".cont-result").classList.remove("hidden");
     document.querySelector(".result").innerHTML = message;
     document.getElementById("bot-number").innerHTML = botNumber;
-    document.querySelector(".cont-result").classList.remove("hidden");
+    
 })
 
 clear.addEventListener("click", function(event) {
@@ -44,11 +46,11 @@ clear.addEventListener("click", function(event) {
 function itsEvenOrOdd(numberOne, numberTwo){
     const result = numberOne + numberTwo;
     if (result % 2 === 0){
-        message = "pari"
+        resultMessage = "pari"
     } else {
-        message = "dispari"
+        resultMessage = "dispari"
     }
-    return message;
+    return resultMessage;
 }
 
 /**
